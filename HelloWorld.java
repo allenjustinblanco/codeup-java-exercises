@@ -37,7 +37,7 @@ public class HelloWorld {
         System.out.println("Lets calculate the perimeter");
         System.out.println("Enter the length");
         int length = Integer.parseInt(scanner.nextLine());
-        System.out.println("Enter the length");
+        System.out.println("Enter the width");
         int width = Integer.parseInt(scanner.nextLine());
 
         int perimeter = 2*length + 2*width;
@@ -46,5 +46,6 @@ public class HelloWorld {
         System.out.format("The perimeter is %s. The area is %s.\n", perimeter, area);
 
         // use .equals or .equalsIgnoreCase to compare strings
+        // .contains
     }
 }
