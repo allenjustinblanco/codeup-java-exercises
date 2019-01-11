@@ -70,10 +70,4 @@ public class MethodsExercises {
       return a - multiply(a,b);
     }
   }
-
-  private static int dice(int n){
-    if(n > 0){
-      
-    }
-  }
 }
