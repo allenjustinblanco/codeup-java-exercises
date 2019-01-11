@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 class Person {
-  public static void main(String[] args){
-
-  }
   // returns the person's name
-  public static String getName(){
+  public static String getName(String name){
+    return name;
   }
   // changes the name property to the passed value
-  public void setName(String name);
+  public void setName(String name){
+  }
   // prints a message to the console using the person's name
-  public void sayHello();
+  public void sayHello(){
+    return String.format("Hello %s.\n", name)
+  }
 }

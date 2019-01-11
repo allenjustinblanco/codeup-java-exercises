@@ -70,4 +70,16 @@ public class MethodsExercises {
       return a - multiply(a,b);
     }
   }
+  public static boolean isVowel(String input){
+    //.length() is a method not and is called with parenthesis
+    if(input.length() > 1){
+      return false;
+    }
+
+    return input.equalsIgnoreCase("a") ||
+           input.equalsIgnoreCase("e") ||
+           input.equalsIgnoreCase("i") ||
+           input.equalsIgnoreCase("o") ||
+           input.equalsIgnoreCase("u");
+  }
 }
