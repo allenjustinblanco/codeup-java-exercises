@@ -40,4 +40,5 @@ public class Input{
           }
           return doubleEntry;
         }
+      
       }
