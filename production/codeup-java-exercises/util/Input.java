@@ -3,6 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class Input{
+
         public String getString() {
           System.out.print("Enter a string!");
           String userString = scan.next();
@@ -31,7 +32,7 @@ public class Input{
           }
         // public getDouble( double min, double max);
         public double getDouble(double min, double max){
-          System.out.println("Input a number");
+          System.out.println("Input a double");
           double doubleEntry = scan.nextDouble();
           if (doubleEntry < min || doubleEntry > max){
               getDouble(min, max);
