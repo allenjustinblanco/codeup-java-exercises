@@ -13,10 +13,11 @@ public class ArrayExercises{
     Person[3] = new Person("Sam");
 
     for(Person x : Person){
-      System.out.println(x);
+      System.out.println(x.getName());
     }
+    System.out.println(Person.length());
   }
-  public static void addPerson(Person[] people){
-    Person[] people = new Person[Person[].length() + 1];
-  }
+  // public static void addPerson(Person[] people){
+  //
+  // }
 }
