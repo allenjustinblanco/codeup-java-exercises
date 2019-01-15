@@ -2,6 +2,7 @@ package util;
 
 public class InputTest{
   public static void main(String[] args){
+    //Datatype variableName = new Classname
     Input Input = new Input();
 
     System.out.println(Input.getString());

@@ -6,9 +6,11 @@ public class Person {
         this.name = name;
     }
     // returns the name
+    //getter (gets a value)
     public String getName() {
         return name;
     }
+    //setter (sets a value)
     // sets the name property of the object to the name input
     public void setName(String name) {
         this.name = name;
