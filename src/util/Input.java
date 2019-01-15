@@ -3,11 +3,18 @@ package util;
 import java.util.Scanner;
 
 public class Input{
+    Scanner scan;
+
+    // constructor returns an Input object
+        public Input() {
+          scan = new Scanner(System.in).useDelimiter("\n");
+        }
         public String getString() {
           System.out.print("Enter a string!");
           String userString = scan.next();
           return userString;
         }
+
         public boolean yesNo(){
           System.out.print("Enter yes or y to continue.");
           String userEntry = scan.next();
@@ -17,6 +24,10 @@ public class Input{
             getString();
           }
           return false;
+        }
+
+        public int getInt(int x){
+          return scan.nextInt();
         }
 
         public int getInt(int min, int max){
@@ -40,5 +51,5 @@ public class Input{
           }
           return doubleEntry;
         }
-      
+
       }

@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class ServerNameGenerator {
   public static void main(String[] args){
     String[] array1 = new String[10];
@@ -25,8 +27,13 @@ public class ServerNameGenerator {
     array2[7] = "India";
     array2[8] = "Brazil";
     array2[9] = "Mexico";
+
+    System.out.println(randomOutput(array1));
   }
-  public String randomOutput() {
-    return 
+  public String randomOutput(String[] array) {
+    Random random = new Random();
+    int index = random.nextInt(array.length);
+    System.out.println(array[index]);
+    return array[index];
   }
 }
