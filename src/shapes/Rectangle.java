@@ -6,10 +6,6 @@ public class Rectangle{
     this.length = length;
     this.width = width;
   }
-  public Rectangle(int side){
-    this.length = side;
-    this. width = side;
-  }
 
   public int getArea(){
     return length * width;
