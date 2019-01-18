@@ -1,11 +1,11 @@
 package shapes;
 
-abstract class Quadrilateral extends Shape implements Measureable {
-  protected double length;
-  protected double width;
+abstract class Quadrilateral extends Shape implements Measurable {
+  double length;
+  double width;
 
   //constructor
-  public Quadrilateral (double length, double width){
+  Quadrilateral(double length, double width){
     this.length = length;
     this.width = width;
   }

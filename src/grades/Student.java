@@ -5,7 +5,7 @@ public class Student{
   private String name;
   private static ArrayList<Integer> grades = new ArrayList<>();
 
-  public void setName(String name){
+  public void Student(String name){
     this.name = name;
   }
 
@@ -14,7 +14,7 @@ public class Student{
     return name;
   }
 
-  // adds the given grade to the grades property
+  // adds the given grade to the gruuades property
   public void addGrade(int grade){
     grades.add(grade);
   }
@@ -38,7 +38,7 @@ public class Student{
     student1.addGrade(100);
 
     System.out.println(student1.getGradeAverage());
-    
+
   }
 
 }

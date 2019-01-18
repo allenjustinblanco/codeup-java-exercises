@@ -3,9 +3,7 @@ package shapes;
 public class ShapesTest {
     public static void main(String[] args) {
 
-        Measurable shape;
-
-        shape = new Square(3);
+        Measurable shape = new Square(3);
         System.out.println("Area " + shape.getArea());
         System.out.println("Perimeter " + shape.getPerimeter());
 
