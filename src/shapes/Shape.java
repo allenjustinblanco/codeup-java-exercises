@@ -1,9 +1,4 @@
-public class abstract Shape{
-  protected numberOfSides;
+package shapes;
 
-
-  public abstract double getArea();
-
-  public abstract double getPerimeter();
-
+abstract public class Shape{
 }
