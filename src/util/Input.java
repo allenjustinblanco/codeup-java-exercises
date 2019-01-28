@@ -30,6 +30,10 @@ public class Input{
           return scan.nextInt();
         }
 
+        public int getInt(String prompt) {
+        System.out.println(prompt);
+        return getInt();
+      }
         public int getInt(int min, int max){
           System.out.println("Input an Integer");
           int numberEntry = scan.nextInt();
@@ -40,6 +44,10 @@ public class Input{
             }
             return numberEntry;
           }
+        public int getInt(int min, int max, String prompt) {
+        System.out.println(prompt);
+        return getInt(min, max);
+    }
         // public getDouble( double min, double max);
         public double getDouble(double min, double max){
           System.out.println("Input a number");

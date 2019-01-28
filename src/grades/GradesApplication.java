@@ -1,47 +1,49 @@
 package grades;
 
 import java.util.HashMap;
-import java.util.Scanner;
+import grades.Student;
 
 public class GradesApplication{
   public static void main(String[] args){
 
     HashMap<String, Student> students = new HashMap<>();
 
-    Student Adam = new Student("Adam");
-    Student Andrew = new Student("Andrew");
-    Student Alyssa = new Student("Alyssa");
-    Student Allen = new Student("Allen");
+    students.put("Adam", new Student("Adam"));
+    students.put("Andrew", new Student("Andrew"));
+    students.put("Alyssa", new Student("Alyssa"));
+    students.put("Allen", new Student("Allen"));
 
-    Adam.addGrade(50);
-    Adam.addGrade(50);
-    Adam.addGrade(50);
-    Adam.addGrade(50);
-    Andrew.addGrade(50);
-    Andrew.addGrade(50);
-    Andrew.addGrade(50);
-    Andrew.addGrade(50);
-    Alyssa.addGrade(50);
-    Alyssa.addGrade(50);
-    Alyssa.addGrade(50);
-    Alyssa.addGrade(50);
-    Allen.addGrade(100);
-    Allen.addGrade(100);
-    Allen.addGrade(100);
-    Allen.addGrade(100);
+    students.get("Adam").addGrade(50);
+    students.get("Adam").addGrade(50);
+    students.get("Adam").addGrade(50);
+    students.get("Adam").addGrade(50);
+    students.get("Andrew").addGrade(50);
+    students.get("Andrew").addGrade(50);
+    students.get("Andrew").addGrade(50);
+    students.get("Andrew").addGrade(50);
+    students.get("Alyssa").addGrade(50);
+    students.get("Alyssa").addGrade(50);
+    students.get("Alyssa").addGrade(50);
+    students.get("Alyssa").addGrade(50);
+    students.get("Allen").addGrade(100);
+    students.get("Allen").addGrade(100);
+    students.get("Allen").addGrade(100);
+    students.get("Allen").addGrade(100);
 
-    students.put("Adam", Adam);
-    students.put("Andrew", Andrew);
-    students.put("Alyssa", Alyssa);
-    students.put("Allen", Allen);
-
-    System.out.println("Welcome!!");
-    System.out.println("");
-    System.out.println("--------------------------------------");
-    System.out.println("");
-    System.out.println("Here are the github usernames of students:");
-    System.out.println("");
-    System.out.println(Allen.getName());
+    System.out.println("|--------/    /--/----/-----/----/--/     /|");
+    System.out.println("|-------/    /--/----/-----/----/--/     /-|");
+    System.out.println("|------/    /--/----/-----/----/--/     /--|");
+    System.out.println("|-----/    /--/               /--/     /---|");
+    System.out.println("|----/    /--/----Welcome----/--/     /----|");
+    System.out.println("|---/    /--/               /--/     /-----|");
+    System.out.println("|--/    /--/----/-----/----/--/     /------|");
+    System.out.println("Here are the github usernames of students: |");
+    System.out.println("|/    /--/----/-----/----/--/     /________|");
+    String usernames = "";
+    for(String user: students.keySet()){
+      usernames += user + " | ";
+    }
+    System.out.println(usernames);
   }
 
 }

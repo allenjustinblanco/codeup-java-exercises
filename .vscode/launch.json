@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Student",
+            "request": "launch",
+            "mainClass": "grades.Student"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GradesApplication",
+            "request": "launch",
+            "mainClass": "grades.GradesApplication"
+        }
+    ]
+}
